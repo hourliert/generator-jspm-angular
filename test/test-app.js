@@ -23,6 +23,7 @@ describe('jspm-angular:app', function () {
       '.gitignore',
       'tslint.json',
       'LICENSE',
+      'karma.conf.js',
       'tsconfig.json',
       'tsd.json',
       'gulpfile.js',

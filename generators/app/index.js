@@ -67,6 +67,7 @@ module.exports = yeoman.generators.Base.extend({
     this.copy('tsconfig.json', 'tsconfig.json');
     this.copy('tsd.json', 'tsd.json');
     this.copy('gulpfile.js', 'gulpfile.js');
+    this.copy('karma.conf.js', 'karma.conf.js');
     
     this.mkdir('.vscode');
     this.directory('vscode', '.vscode');
