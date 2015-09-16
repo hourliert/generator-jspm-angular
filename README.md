@@ -1,46 +1,52 @@
-# generator-jspm-angular [![Build Status](https://secure.travis-ci.org/hourliert/generator-jspm-angular.png?branch=master)](https://travis-ci.org/hourliert/generator-jspm-angular)
-
-> [Yeoman](http://yeoman.io) generator
-
+# generator-jspm-angular [![Build Status](https://travis-ci.org/hourliert/generator-jspm-angular.svg)](https://travis-ci.org/hourliert/generator-jspm-angular)
 
 ## Getting Started
 
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+### Install
 
 ```bash
-npm install -g yo
-```
-
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-jspm-angular from npm, run:
-
-```bash
-npm install -g generator-jspm-angular
-```
-
-Finally, initiate the generator:
-
-```bash
+npm install -g yo generator-jspm-angular
 yo jspm-angular
 ```
 
-### Getting To Know Yeoman
+### Structure
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+The scaffolded project has this structure:
+```
+.
+├── .editorconfig
+├── .gitignore
+├── .vscode
+│   └── settings.json
+├── LICENSE
+├── README.md
+├── app
+│   ├── all.d.ts
+│   ├── greeter
+│   │   ├── greeter-ctrl.spec.ts
+│   │   ├── greeter-ctrl.ts
+│   │   └── greeter.ts
+│   └── main.ts
+├── gulpfile.js
+├── index.html
+├── jspm.config.js
+├── karma.conf.js
+├── package.json
+├── tsconfig.json
+├── tsd.json
+└── tslint.json
+```
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+### Gulp tasks
 
+* `default` cleans the project, install type definition files and build a production ready version in `./dist`.
+* `serve` launches a dev server with hot reloading. Runs TypeScript Linter each time a .ts file has changed.
+* `serve:dist` builds and serves the production version.
+* `typedoc` generates the project documentation.
+
+### Tests
+
+Run `npm test` to launch karma an run unit tests.
 
 ## License
 
