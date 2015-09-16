@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": true
+  },
+  "filesGlob": [
+    "app/**/*.ts",  
+    "typings/tsd.d.ts",
+    "!node_modules/**/*.ts",
+    "!jspm_packages/**/*.ts"
+  ]
+}
