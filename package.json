@@ -1,6 +1,6 @@
 {
   "name": "generator-jspm-angular",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -17,7 +17,11 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "jspm",
+    "angular",
+    "es6",
+    "gulp"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
